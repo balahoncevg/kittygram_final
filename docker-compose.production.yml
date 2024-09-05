@@ -6,23 +6,27 @@ volumes:
   media:
 
 services:
+
   db:
     image: postgres:13
     env_file: .env
     volumes:
       - pg_data:/var/lib/postgresql/data
+
   backend:
     image: balahoncevg/kittygram_backend
     env_file: .env
     volumes:
       - static:/backend_static
       - media:/var/www/kittygram/media/
+
   frontend:
     image: balahoncevg/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
+
   gateway:
     image: balahoncevg/kittygram_gateway
     env_file: .env
