@@ -1,5 +1,3 @@
-![example workflow](https://github.com/balahoncevg/kittygram_final/actions/workflows/main.yml/badge.svg)
-
 # Social Network for Cats – Kittygram  
 
 ## Project Description:  
@@ -36,16 +34,6 @@ The project is deployed using **Nginx** and **Docker**.
 - HTML  
 
 Запуск проекта осуществляется с помощью nginx и docker.  
-
----
-
-## Project Link:  
-
-**In Russian:**  
-Ссылка на проект:
-
-
-https://kittygram.ddns.net  
 
 ---
 
